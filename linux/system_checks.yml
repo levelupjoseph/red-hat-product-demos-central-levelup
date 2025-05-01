@@ -1,0 +1,14 @@
+---
+- name: System Configuration Checks
+  hosts: node1
+  become: true
+  tasks:
+    - name: Check user existence
+      ansible.builtin.command:
+        cmd: id myuser
+      register: user_check
+ 
+    - name: Report user status
+      ansible.builtin.debug:
+        msg: "User 'myuser' exists."
+      when: user_check.rc == 0
