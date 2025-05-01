@@ -1,6 +1,6 @@
 ---
 - name: Podman
-  hosts: "{{ _hosts | default(omit) }}"
+  hosts: purpose_demo
   vars:
     volume_path: podman
     message: undef
