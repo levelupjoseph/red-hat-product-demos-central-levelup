@@ -1,6 +1,6 @@
 ---
 - name: System Configuration Checks
-  hosts: node1
+  hosts: purpose_demo
   become: true
   tasks:
     - name: Check user existence
