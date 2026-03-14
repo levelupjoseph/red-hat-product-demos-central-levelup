@@ -1,12 +1,12 @@
 ---
 aap_user_accounts:
-  - username: apd-admin
-    email: apd-admin@example.com
+  - username: admin
+    email: joseph@levelupla.io
     update_secrets: false
 
 gateway_role_user_assignments:
   - role_definition: Organization Admin
-    user: apd-admin
+    user: admin
     object_ids:
       - Ansible Product Demos (APD)
 
